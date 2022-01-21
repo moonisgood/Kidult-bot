@@ -38,6 +38,6 @@ module.exports = {
 				.setDescription(str);
 		}
 
-		await interaction.editReply({ embeds: [embed] });
+		await interaction.followUp({ embeds: [embed] });
 	},
 };
