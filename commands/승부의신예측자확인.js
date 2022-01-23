@@ -7,7 +7,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('승부의신예측자확인')
-		.setDefaultPermission(true)
+		.setDefaultPermission(false)
 		.setDescription('승부의신 이벤트 관리자 명령어'),
 	async execute(interaction) {
 		const EventWinPrediction = require('../models/EventWinPrediction.js')(sequelize, Sequelize.DataTypes);
