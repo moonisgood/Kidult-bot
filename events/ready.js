@@ -18,7 +18,7 @@ module.exports = {
 				}],
 			},
 		];
-		await client.guilds.cache.get('917847857791381544')?.commands.permissions.set({ fullPermissions });
+		await client.guilds.cache.get('517282842678394880')?.commands.permissions.set({ fullPermissions });
 
 		// const Users = require('../models/Users.js')(sequelize, Sequelize.DataTypes);
 		// const Teams = require('../models/Teams.js')(sequelize, Sequelize.DataTypes);
