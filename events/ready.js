@@ -12,7 +12,7 @@ module.exports = {
 			{
 				id: '934687884915654677',
 				permissions: [{
-					id: '326760683779653632',
+					id: '250664648066596864',
 					type: 'USER',
 					permission: true,
 				}],
