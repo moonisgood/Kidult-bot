@@ -13,6 +13,7 @@ module.exports = {
 		const EventWinPrediction = require('../models/EventWinPrediction.js')(sequelize, Sequelize.DataTypes);
 		const embed = new MessageEmbed();
 		let str = '';
+		console.log(interaction);
 
 		await interaction.reply('예측자를 찾는 중입니다...');
 
