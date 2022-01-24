@@ -28,6 +28,10 @@ module.exports = {
 	async execute(interaction) {
 		const teamName = [ 0, '인생은 기도메타', '인생눈이흐릿해', '해치웠나', '커피뽑는공룡', '자로튀김' ];
 		const whoIsIn1 = [ '말캉말캉 슬라임', '달연오(요댕)', 'Gido', '천향초', '한큐인생' ];
+		const whoIsIn2 = [ 'IDLE 소연 Fan', '때껄룩 키움', '흐릿', 'pstnn', '인생피곤하내' ];
+		const whoIsIn3 = [ '우살', '애옹쿠구', '대억', '망따야', '불곰두두' ];
+		const whoIsIn4 = [ '두릅경택', '떼윤', 'Swift', 'Quakeroat', '핑크빛쟈몽' ];
+		const whoIsIn5 = [ '짤짤2', '떡잎감자', 'jalo', 'hrhrhrhrhrr', '삼인궁' ];
 		const EventWinPrediction = require('../models/EventWinPrediction.js')(sequelize, Sequelize.DataTypes);
 		const embed = new MessageEmbed();
 
@@ -36,7 +40,7 @@ module.exports = {
 			embed
 				.setColor('#0099ff')
 				.setTitle('💥 승부의 신 💥')
-				.setDescription(`1️⃣팀: ${teamName[1]} - ${whoIsIn1}\n2️⃣팀: ${teamName[2]}\n3팀: ${teamName[3]}\n4팀: ${teamName[4]}\n5팀: ${teamName[5]}\n――――――――――――――――――――\n승리 팀을 예측해보세요!\n/승부의신 참가 1등팀번호 2등팀번호 3등팀번호 4등팀번호 5등팀번호\n입력하실 때 TAP키를 이용해주세요. 도움이 필요하면 '떼윤'에게 문의`);
+				.setDescription(`1️⃣팀: ${teamName[1]} - ${whoIsIn1}\n2️⃣팀: ${teamName[2]} - ${whoIsIn2}\n3️⃣팀: ${teamName[3]} - ${whoIsIn3}\n4️⃣팀: ${teamName[4]} - ${whoIsIn4}\n5️⃣팀: ${teamName[5]} - ${whoIsIn5}\n――――――――――――――――――――\n승리 팀을 예측해보세요!\n/승부의신 참가 1등팀번호 2등팀번호 3등팀번호 4등팀번호 5등팀번호\n입력하실 때 TAP키를 이용해주세요. 도움이 필요하면 '떼윤'에게 문의`);
 
 			await interaction.reply({ embeds: [embed] });
 		}
