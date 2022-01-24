@@ -36,7 +36,7 @@ module.exports = {
 			embed
 				.setColor('#0099ff')
 				.setTitle('💥 승부의 신 💥')
-				.setDescription(`1팀: ${teamName[1]}(${whoIsIn1})\n2팀: ${teamName[2]}\n3팀: ${teamName[3]}\n4팀: ${teamName[4]}\n5팀: ${teamName[5]}\n――――――――――――――――――――\n승리 팀을 예측해보세요!\n/승부의신 참가 1등팀번호 2등팀번호 3등팀번호 4등팀번호 5등팀번호\n입력하실 때 TAP키를 이용해주세요. 도움이 필요하면 '떼윤'에게 문의`);
+				.setDescription(`1팀: ${teamName[1]} - ${whoIsIn1}\n2팀: ${teamName[2]}\n3팀: ${teamName[3]}\n4팀: ${teamName[4]}\n5팀: ${teamName[5]}\n――――――――――――――――――――\n승리 팀을 예측해보세요!\n/승부의신 참가 1등팀번호 2등팀번호 3등팀번호 4등팀번호 5등팀번호\n입력하실 때 TAP키를 이용해주세요. 도움이 필요하면 '떼윤'에게 문의`);
 
 			await interaction.reply({ embeds: [embed] });
 		}
