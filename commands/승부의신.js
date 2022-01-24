@@ -27,6 +27,7 @@ module.exports = {
 				.addIntegerOption(option => option.setName('5등팀').setDescription('팀번호'))),
 	async execute(interaction) {
 		const teamName = [ 0, '인생은 기도메타', '인생눈이흐릿해', '해치웠나', '커피뽑는공룡', '자로튀김' ];
+		const whoIsIn1 = [ '말캉말캉 슬라임', '달연오(요댕)', 'Gido', '천향초', '한큐인생' ];
 		const EventWinPrediction = require('../models/EventWinPrediction.js')(sequelize, Sequelize.DataTypes);
 		const embed = new MessageEmbed();
 
@@ -35,7 +36,7 @@ module.exports = {
 			embed
 				.setColor('#0099ff')
 				.setTitle('💥 승부의 신 💥')
-				.setDescription(`1팀: ${teamName[1]}\n2팀: ${teamName[2]}\n3팀: ${teamName[3]}\n4팀: ${teamName[4]}\n5팀: ${teamName[5]}\n――――――――――――――――――――\n승리 팀을 예측해보세요!\n/승부의신 참가 1등팀번호 2등팀번호 3등팀번호 4등팀번호 5등팀번호\n입력하실 때 TAP키를 이용해주세요. 도움이 필요하면 '떼윤'에게 문의`);
+				.setDescription(`1팀: ${teamName[1]}(${whoIsIn1})\n2팀: ${teamName[2]}\n3팀: ${teamName[3]}\n4팀: ${teamName[4]}\n5팀: ${teamName[5]}\n――――――――――――――――――――\n승리 팀을 예측해보세요!\n/승부의신 참가 1등팀번호 2등팀번호 3등팀번호 4등팀번호 5등팀번호\n입력하실 때 TAP키를 이용해주세요. 도움이 필요하면 '떼윤'에게 문의`);
 
 			await interaction.reply({ embeds: [embed] });
 		}
