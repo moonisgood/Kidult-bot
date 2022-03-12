@@ -17,7 +17,7 @@ module.exports = {
 		await interaction.reply('예측자를 찾는 중입니다...');
 
 		// DB 데이터가 있는지 체크한다.
-		const users = await EventWinPrediction.findAll({ where: { win1:1, win2:2, win3:3, win4:4, win5:5 } });
+		const users = await EventWinPrediction.findAll({ where: { win1:5, win2:1, win3:2, win4:3, win5:4 } });
 
 		// DB 데이터가 없을 경우
 		if (users.length === 0) {
